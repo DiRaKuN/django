@@ -5,4 +5,4 @@ def index(request):
 	return render(request, "posts/index.html")
 
 def user_list(request):
-	return HttpResponse("Пользователи.")
+	return render(request, "posts/user_list.html")
