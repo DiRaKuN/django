@@ -18,6 +18,6 @@ from django.urls import path
 from posts import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index),
-    path('users/', views.user_list),
+    path('', views.index, name = "index"),
+    path('user_list/', views.user_list, name = "user_list"),
 ]
